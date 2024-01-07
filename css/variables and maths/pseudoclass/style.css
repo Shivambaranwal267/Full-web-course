@@ -1,0 +1,120 @@
+ .container{
+       width: 100%;
+       height: 100vh;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       /* border: 2px solid red; */
+ }
+
+.box {
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   position: relative;
+}
+
+.box::before {
+   content:'before' ;
+   /* width: 100px;
+   height: 100px; */
+   color: white;
+   position: absolute;
+   /* z-index: 2;
+   bottom: 100px; */
+   background-color: green;
+
+
+
+}
+
+.box::after {
+   content: 'after';
+   /* width: 100px;
+   height: 100px; */
+   color: white;
+   position: absolute;
+
+   background-color:yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* a {
+    font-size: 4rem;
+ }
+
+
+  a:hover {
+    color: red;
+  } 
+
+ a:visited {
+    color: teal ;
+ }
+
+ a:first-child {
+
+ } */
+
+ /* li:first-child {
+    background-color: blanchedalmond;
+
+ }
+ 
+ li:last-child {
+    font-weight: bolder;
+    font-size: xx-large;
+ } */
+
+
+ /* li:nth-child(n){
+    color: #0000ff;
+ }
+ li:hover {
+    color: red;
+  } 
+
+  p::first-line {
+     
+     text-align: justify;
+     font-size: 2rem;
+
+  }
+
+  p::first-letter {
+    background-color: aqua;
+    margin: 20px;
+    font-size: 6rem;
+  } */
+

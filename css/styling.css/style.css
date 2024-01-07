@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.grapy{
+     
+    border: 2px solid rgb(252, 2, 2);
+}
+p{
+    width: 400px;
+    margin: 40px;
+    display: inline-block;
+
+}
+a{
+    width: 400px;
+    display: inline-block;
+}
+img{
+    display: none;
+    width: 400px;
+}

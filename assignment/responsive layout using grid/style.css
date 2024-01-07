@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+
+    
+    margin: 20px;
+    display: grid;
+    /* grid-template-rows: repeat(4,1fr); */
+    /* padding: 20px; */
+    gap: 1.2rem;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height:7vh;
+    border: 5px solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+ .main {
+     height: 60vh;
+     }  
+    
+
+/* tablet */
+
+     @media screen and (min-width:700px) {
+         .container {
+            grid-template-areas: 'hd hd'
+                                 'na na'
+                                 'sd ma'
+                                 'ad ft';
+            }
+
+         
+              #header {
+                  grid-area: hd;
+                  height: 9vh;
+                  width: 96.5vw;
+
+              }
+
+              #navigation {
+                grid-area: na;
+                height: 9vh;
+                width: 96.5vw;
+
+              }
+
+              #main {
+                grid-area:ma;
+                width: 71vw;                                  
+                height: 60vh;
+              }
+
+              #sidebar {
+                grid-area:sd;
+                width: 23vw;                                  
+                height: 60vh;
+
+              }
+
+              #ads {
+                grid-area:ad;
+                height: 9vh;
+                width: 23vw;
+              }
+
+
+              #footer {
+                grid-area:ft;
+                height: 9vh;
+                  width: 71vw;
+
+              }
+
+
+
+     }
+
+
+
+
+/* desktop starts */
+
+ @media  screen and (min-width:1200px) {
+      .container {
+     grid-template-areas: 'hd hd hd'
+                          'sd na ad'
+                          'sd ma ad'
+                          'ft ft ft' ;
+
+      }
+
+      #header {
+        grid-area: hd;
+        width: 100vw;
+        height: 10vh;
+
+      }
+
+      #navigation {
+        grid-area: na;
+        width: 52vw;
+        height: 7vh;
+      }
+
+      #sidebar {
+        grid-area:sd;
+        width: 22.4vw;
+        height: 70vh;
+      }
+
+      #main {
+
+        grid-area: ma;
+        width: 52vw;
+        height: 60vh;
+
+      }
+
+      #ads {
+        grid-area: ad;
+        width: 22.4vw;
+        height: 70vh;
+
+      }
+
+      #footer {
+        grid-area:ft ;
+        width: 100vw;
+        height: 10vh;
+
+      }
+ }    
+
+        
+     
+
+

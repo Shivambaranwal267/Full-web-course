@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid; 
+  grid-template-columns: 20% auto 20%;
+  grid-template-areas:
+    "hd hd hd"
+    "nv mn ad"
+    "fd fd fd";
+}
+
+.red-box {
+  border: 2px solid red;
+  height: 200px;
+}
+
+header {
+  grid-area: hd;
+}
+
+main {
+  grid-area: mn;
+}
+
+.navigation {
+  grid-area: nv;
+}
+
+.advertisement {
+  grid-area: ad;
+}
+
+footer {
+  grid-area: fd;
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 80%;
+    margin-inline: 20px auto;
+    display: flex;
+    gap: 20px;
+
+}
+
+.first-para {
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+   
+
+
+}
+
+
+
+.second-para {
+    width:40%;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.icon {
+    gap: 20px;
+}

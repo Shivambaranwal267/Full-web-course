@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global varaiable */
+
+:root {
+     --violet-color: #910291;
+     --text-size: 1.2rem;
+}
+
+
+ .container {
+    /* width: calc(100% - 80px);  */
+     /* height: 400px; */
+    /* width: max(50%, 300px , 100px ,  500px , 80vw); */
+     /* width: min(800px, 90%); */
+    /* aspect-ratio: 1 / 1;     width/height   */
+    border: 2px solid #546723;
+    margin-inline: auto;
+
+
+}
+
+.box {
+    display: inline-block; 
+    width: calc( 100vw /  4); /*u should give a gap*/
+    /* height:min(40px, 20%) ; */
+    /* font-size: var(--text-size) ; */
+    border: 2px  solid  #910291;    
+}
+
+button {
+    --violet-color: #8F00FF;     /* local variable */
+    --buton-text-size:16px;
+    background-color: var(--violet-color);
+    padding: 10px 40px;
+    font-size: var(--buton-text-size) ;
+}
+

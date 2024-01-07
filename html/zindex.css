@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+    position: relative;
+}
+img {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    
+  }
+
+  .r {
+        z-index:2 ;
+  }

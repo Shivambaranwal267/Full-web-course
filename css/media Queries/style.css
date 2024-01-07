@@ -1,0 +1,50 @@
+body {
+      height: 100vh;
+      background-color: red;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 100%;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    border: 5px solid rgb(0, 108, 250);
+    background-color: rgb(148, 189, 230);
+
+}
+
+@media only screen and (min-width:600px){
+    body{
+        background-color: green;
+    }
+    ul {
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (min-width:800px){
+    ul{
+        flex-direction: row;
+    }
+    
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1000px)  {
+    body {
+        background-color: yellow;
+    }
+}
+    
+

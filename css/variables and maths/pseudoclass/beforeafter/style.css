@@ -1,0 +1,11 @@
+p {
+    font-size: 3rem;
+}
+
+p::before {
+    content: 'this is a magic  ';
+}
+
+p::after {
+    content: '  after magic';
+}

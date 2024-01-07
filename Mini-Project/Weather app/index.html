@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <img class="bgimage" id="clear_sky_day" src="clear_sky_day.jpg" alt="">
+        <img class="bgimage" id="clear_sky_night" src="clear_sky_night.jpg" alt="">
+        <img class="bgimage" id="few_clouds_day" src="few_clouds_day.jpg" alt="">
+        <img class="bgimage" id="few_clouds_night" src="few_clouds_night.jpg" alt="">
+        <img class="bgimage" id="scattered_clouds_day" src="scattered_clouds_day.jpg" alt="">
+        <img class="bgimage" id="scattered_clouds_night" src="scattered_clouds_night.jpg" alt="">
+        <img class="bgimage" id="broken_clouds_day" src="broken_clouds_day.jpg" alt="">
+        <img class="bgimage" id="broken_clouds_night" src="broken_clouds_night.jpg" alt="">
+        <img class="bgimage" id="shower_rain_day" src="shower_rain_day.jpg" alt="">
+        <img class="bgimage" id="shower_rain_night" src="shower_rain_night.jpg" alt="">
+        <img class="bgimage" id="heavy_rain_day" src="heavy_rain_day.jpg" alt="">
+        <img class="bgimage" id="heavy_rain_night" src="heavy_rain_night.jpg" alt="">
+        <img class="bgimage" id="thunderstorm" src="thunderstorm.jpg" alt="">
+        <img class="bgimage" id="day_snow" src="day_snow.jpg" alt="">
+        <img class="bgimage" id="night_snow" src="night_snow.jpg" alt="">
+        <img class="bgimage" id="mist_day" src="mist_day.jpg" alt="">
+        <img class="bgimage" id="mist_night" src="mist_night.jpg" alt="">
+
+        <div class="alert">
+          Error: Some Error Occured! Check your input.
+        </div>
+        
+      <div class="main-container" id="inner-container">
+        
+
+        <form>
+          <input
+            id="city-name"
+            type="text"
+            placeholder="Enter a City name"
+            required
+          />
+          <button type="submit">search</button>
+        </form>
+
+        <div class="inner-container">
+          <div class="loading">
+            <div class="loader">
+              <div class="justify-content-center jimu-primary-loading"></div>
+            </div>
+          </div>
+
+          <div class="data">
+            <!-- .. -->
+          </div>
+        </div>
+      </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

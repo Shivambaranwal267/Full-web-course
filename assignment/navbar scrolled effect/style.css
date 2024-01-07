@@ -1,0 +1,33 @@
+* { 
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: rgb(183, 171, 171);
+    padding: 8px 16px;
+    line-height: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    /* margin-inline: 20px auto; */
+}
+
+
+.flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+ .nav-Links a {
+    text-decoration: none;
+    padding: 0 20px;
+    
+}
+.icon {
+    height: 100%;
+}
+a:hover {
+    background-color: white;
+}
+

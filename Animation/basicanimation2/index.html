@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+
+        .container {
+            height:100vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d44890;
+
+        }
+       
+        .button {
+            text-decoration: none;
+            text-transform:uppercase ;
+            letter-spacing: 0.5rem;
+            font-size: 2rem;
+            text-decoration: none;
+            /* background-color: teal; */
+            color: black;
+            padding: 20px 30px;
+            /* transition: 0.4s ease-in ; */
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        /* .button:hover {
+            text-decoration: underline;
+            background-color: bisque;
+
+        } */
+
+        .button:before {
+            content:'';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: -100%;
+            border-radius: 50%;
+            /* background-color: white; */
+            background-color: blanchedalmond;
+            z-index: -1;
+            transition:0.8s ease-in-out  ;
+            /* border:2px solid black; */
+            /* transform: scale(2); */
+        }
+
+        /* .button:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height:100%;
+            background-color: blanchedalmond;
+            z-index: -1;
+            transform: scale(2);
+            border:2px solid red;
+
+
+
+        } */
+
+        .button:hover::before{
+             /* background-color: red; */
+               left: 0;
+             transform: scalex(2);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+     
+    <div class="container">
+
+        <a class="button" href="#">button</a>
+    </div>
+
+
+
+
+</body>
+</html>

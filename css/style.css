@@ -1,0 +1,19 @@
+.box {
+    width: 200px;
+    height:200px;
+   
+    border: 20px solid black;
+
+    padding: 10px;
+    margin-inline: auto;
+    font-size: 30px;
+    
+    
+    
+}
+
+/* universal selector */
+* {
+    box-sizing: border-box;
+    margin: 20px;
+}
