@@ -28,7 +28,7 @@ console.log(words);*/
 console.log(words);
 console.log(words.length); */
 
-/*
+
 const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol', 'Zebra' ];
 console.log(words);
 words.sort(); 
@@ -36,7 +36,7 @@ console.log(words);
 
  for(let i in words) {
      console.log('hello', words[i]);
- }    */
+ }    
 
 /*
 const words = ["Shivam", "Kartik", "Vishal", "Burnol"];
