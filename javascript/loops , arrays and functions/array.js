@@ -28,7 +28,7 @@ console.log(words);*/
 console.log(words);
 console.log(words.length); */
 
-
+/*
 const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol', 'Zebra' ];
 console.log(words);
 words.sort(); 
@@ -36,15 +36,15 @@ console.log(words);
 
  for(let i in words) {
      console.log('hello', words[i]);
- }    
+ }    */
 
 /*
 const words = ["Shivam", "Kartik", "Vishal", "Burnol"];
-// const isPresent = words.includes("Shivam");
+const isPresent = words.includes("Shivam");
 
 const index = words.indexOf("Kartik");
 console.log(index);
-// console.log(isPresent);
+console.log(isPresent);
 */
 
 /*
@@ -55,23 +55,21 @@ console.log(index);
  console.log(words);
  */
 
-/*
- let a = [10, 4, 23,'hi'];
+let a = [10, 4, 23, "hi"];
 
- a.forEach( (element,index) =>  {
-
- console.log( index,'hello',element);
- })
+a.forEach((element, index) => {
+  console.log(index, "hello", element);
+});
 
 // or
 
 // index,element,array use also in foreach function
 
 const myFunction = (element) => {
-    console.log('printing',element);
-}
+  console.log("printing", element);
+};
 
-a.forEach(myFunction) */
+a.forEach(myFunction);
 
 // let a = [10, 5, 23];
 

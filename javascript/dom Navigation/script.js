@@ -1,15 +1,15 @@
-/*const countingUL = document.querySelector("#counting");
+const countingUL = document.querySelector("#counting");
 
 // const UlChildren = countingUL.childNodes;
 // const UlChildren = countingUL.children;
 
-const UlParent = countingUL.parentElement;
+// const UlParent = countingUL.parentElement;
 
 
-console.log(UlChildren);
-console.log(UlParent); 
-*/
-/*
+// console.log(UlChildren);
+// console.log(UlParent); 
+
+
 
 const oneLi = document.getElementById("one");
 const siblingOneLi = oneLi.parentNode.childNodes;
@@ -30,9 +30,9 @@ for (let i = 0; i < siblingOneLi.length; i++) {
     console.log(Sibling.data);
     // data read purpose only
 }
-*/
 
 
-console.log(document.body);  //for body
 
-console.log(document.documentElement); // full HTML access
+// console.log(document.body);  //for body
+
+// console.log(document.documentElement); // full HTML access
