@@ -31,8 +31,8 @@ PizzaPromise.then((pizza, error) => {
   // reject call catch
   console.log("error Occured", error); //  error occured
 });
-*/
 
+*/
 
 // railway ticket
 

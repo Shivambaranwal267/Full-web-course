@@ -1,7 +1,7 @@
 async function getcheese() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("cheese 🧀");
+      resolve(`cheese 🧀`);
     }, 1000);
   });
 }

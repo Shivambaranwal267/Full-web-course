@@ -1,4 +1,4 @@
-/*
+
 
 // this keyword is not used in arrow function only in function
 
@@ -32,9 +32,9 @@ console.log(obj2);
 
 obj1.start();
 obj2.start();
-*/
 
-/*
+
+
 const student = {
   name: "Shivam",
   marks: 56,
@@ -44,4 +44,4 @@ const student = {
 };
 
 student.talk();
-*/
+

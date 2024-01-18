@@ -20,10 +20,10 @@ async function fetchData() {
     // console.log(response);
 
     const JsonData = await response.json();
-    // console.log(JsonData);
+    console.log(JsonData);
 
     phoneBox.style.display = "block";
-    loadingElement.style.display = 'none';
+    loadingElement.style.display = "none";
 
     loadData(JsonData);
 
@@ -47,12 +47,11 @@ function loadData(JsonData) {
   const phoneImg = document.getElementById("phone-img");
 
   // using destructing
-  const { title, description, thumbnail} = JsonData; 
-
+  const { title, description, thumbnail } = JsonData;
 
   phoneTextElement.innerHTML = title;
   phoneDesc.innerHTML = description;
-  phoneImg.innerHTML =thumbnail;
+  phoneImg.innerHTML = thumbnail;
 
   // phoneTextElement.innerHTML = JsonData.title;
   // phoneDesc.innerHTML = JsonData.description;

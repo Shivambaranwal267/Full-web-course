@@ -5,12 +5,12 @@
 // it is higher order function
 const a = [11, 22, 31, 44, 57, 68, 72, 81];
 
-const iseven = (num) => {
+const isEven = (num) => {
   return num % 2 == 0;
 };
 
-const isodd = (num) => {
-  return num % 2 !== 0;
+const isOdd = (num) => {
+  return num % 2 != 0;
 };
 
 // let count = 1;
@@ -20,19 +20,19 @@ const isodd = (num) => {
 //   return true;
 // });
 
-const result = a.filter((element) => {    // if boolean value true then its return
-  return element % 3 == 0;
-});
+// const result = a.filter((element) => {    // if boolean value true then its return
+//   return element % 3 == 0;
+// });
 
-console.log(result);
+// console.log(result);
 
-const result1 = a.filter(iseven);
-const result2 = a.filter(isodd);
+const result1 = a.filter(isEven);
+const result2 = a.filter(isOdd);
 
-console.log(result1 + " even");
-console.log(result2 + " odd");
+console.log(result1 + " is Even");
+console.log(result2 + " is Odd");
 
-console.log(a);
+// console.log(a);
 
 */
 
@@ -64,12 +64,13 @@ function negative(num) {
 // const result1 = a.map((num) => "my num is " + num) // string passes
 // const result1 = a.map(square);
 // const result2 = a.filter(negative); // in map its gives only negative number but in filter its same number
-// const result2 = a.map(iseven) // its gives boolean value
+const result2 = a.map(iseven) // its gives boolean value
 
 
 // console.log(result1);
 console.log(result2);
 */
+
 
 // find
 // when u use only only single element will show
@@ -81,6 +82,8 @@ const found = a.find((element) => element % 2 == 0);
 
 console.log(found);
 */
+
+
 
 const students = [
   {

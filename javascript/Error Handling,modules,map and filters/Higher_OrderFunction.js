@@ -5,16 +5,15 @@ const filterNumber = (conditionFunction) => {
   const b = [];
   for (let i = 0; i < a.length; i++) {
     // if (a[i] % 2 == 0) { // logic for checking number
-    if ((conditionFunction(a[i]), arr, element)) {
+    if (conditionFunction(a[i]), i, a) {
       b.push(a[i]);
     }
   }
   return b;
-}
-
+};
 
 const IsEven = (number) => {
-  console.log(number + ' called');
+  console.log(number + " called");
   return number % 2 == 0;
 };
 
