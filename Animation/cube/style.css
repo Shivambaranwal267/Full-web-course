@@ -71,7 +71,7 @@ body {
 }
 
 #back {
-    background-color: deepskyblue;
+  background-color: deepskyblue;
   top: 125px;
   transform: rotateX(-90deg);
 }
