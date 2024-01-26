@@ -33,7 +33,7 @@ document.addEventListener("keydown", (e) => {
       element.classList.add('active-white')
       setTimeout(() => {
         element.classList.remove('active-white')
-      }, 100);
+      }, 1);
     }
   });
 
@@ -43,7 +43,7 @@ document.addEventListener("keydown", (e) => {
       element.classList.add('active-black')
       setTimeout(() => {
         element.classList.remove('active-black')
-      }, 100);
+      }, 1);
     }
   });
 });
