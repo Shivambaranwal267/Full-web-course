@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 function counter() {
-  let count = 0;
+  let [count, setCount] = useState(0);
 
   function updateCount() {
-    count++;
+    setCount(count++);
+    // console.log("count is ", count);
   }
 
   return (
