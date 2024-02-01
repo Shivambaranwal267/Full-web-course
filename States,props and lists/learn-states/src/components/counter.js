@@ -5,7 +5,7 @@ function counter() {
 
   function updateCount() {
     setCount(count++);
-    // console.log("count is ", count);
+    // consol .log("count is ", count);
   }
 
   return (
