@@ -1,8 +1,16 @@
-
+// import Counter from "./components/Counter";
+import Fruits from "./components/Fruits";
+import Notes from "./components/Notes";
 
 function App() {
   return (
-  <div>Hello World</div>
+    <div>
+      {/* <Counter /> */}
+
+      {/* <Fruits /> */}
+      <Notes/>
+
+    </div>
   );
 }
 
