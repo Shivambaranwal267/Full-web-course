@@ -5,8 +5,8 @@ function card(props) {
   const cardStyle = {
     width: "300px",
     height: "300px",
-    margin: "20px",
-    boxShadow: "2px 2px 2px gray",
+    margin: "20px", 
+    boxShadow: "2px 2px 2pxgray",
   };
 
   return (
