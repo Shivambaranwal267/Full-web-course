@@ -10,3 +10,5 @@ const users = [
     password: "1235",
   },
 ];
+
+module.exports = users;

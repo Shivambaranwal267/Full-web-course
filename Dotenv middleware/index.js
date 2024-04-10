@@ -6,6 +6,18 @@ const postRouter = require("./routes/post")
 const authRouter = require("./routes/auth")
 const app = express();
 
+app.use(express.json())
+
+app.use((req, res, next)=> {
+  console.log(req.method, req.url, new Date().toTimeString());
+  next()
+  
+  // if( req.body && req.body.name === "Suraj" ) {
+  //   next();
+  // } else {
+  //   res.send("not allowed")
+  // }
+})
 app.use("/post",postRouter) 
 
 app.use("/auth",authRouter) 
