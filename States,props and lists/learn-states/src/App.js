@@ -12,9 +12,9 @@ function App() {
     setCountInParent(count);
   }
 
-const uploadData = () => {
-  console.log('I will start uploading the data now');
-}
+  const uploadData = () => {
+    console.log("I will start uploading the data now");
+  };
 
   return (
     <div>
@@ -25,10 +25,9 @@ const uploadData = () => {
 
       <p>Inside the parent: {countInParent}</p>
       <Child1 onCountUpdate={updateCountInParent} />
-      <Child2 countFromParent = {countInParent} uploadData = {uploadData} />
+      <Child2 countFromParent={countInParent} uploadData={uploadData} />
     </div>
   );
 }
-
 
 export default App;
