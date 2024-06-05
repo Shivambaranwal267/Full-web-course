@@ -4,6 +4,7 @@ import Child2 from "./components/Child2";
 import Counter from "./components/Counter";
 import Fruits from "./components/Fruits";
 import Notes from "./components/Notes";
+import UserForm from "./forms and hooks/UserForm";
 
 function App() {
   const [countInParent, setCountInParent] = useState(0);
@@ -23,9 +24,15 @@ function App() {
       {/* <Fruits /> */}
       {/* <Notes/> */}
 
-      <p>Inside the parent: {countInParent}</p>
+      {/* <p>Inside the parent: {countInParent}</p>
       <Child1 onCountUpdate={updateCountInParent} />
-      <Child2 countFromParent={countInParent} uploadData={uploadData} />
+      <Child2 countFromParent={countInParent} uploadData={uploadData} /> */}
+
+      
+    {/*  */}
+
+    <UserForm/>
+
     </div>
   );
 }
