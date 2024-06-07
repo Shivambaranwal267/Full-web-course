@@ -20,9 +20,10 @@ function UserForm() {
     console.log(e.target.value);
     setFruit(e.target.value);
   }
+  const arr = [1, 2, 3];
 
   return (
-    <form style={{ padding: "20px", margin: "20px" }}>
+    <form onSubmit={handleSubmit} style={{ padding: "20px", margin: "20px" }}>
       <label htmlFor="name">Name</label>
       {/* <input type="text" onChange={(event) => setName(event.target.value)} /> */}
       <input type="text" id="nameInput" ref={nameInputRef} />
@@ -33,6 +34,12 @@ function UserForm() {
         <option value="lime">Lime</option>
         <option value="cocnut">Coconut</option>
         <option value="mango">Mango</option>
+      </select>
+
+      <select name="" id="">
+        {arr.map((element) => {
+          return <option>choose {element}</option>;
+        })}
       </select>
 
       <br />

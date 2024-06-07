@@ -5,6 +5,9 @@ import Counter from "./components/Counter";
 import Fruits from "./components/Fruits";
 import Notes from "./components/Notes";
 import UserForm from "./forms and hooks/UserForm";
+import UsseEffectHook from "./forms and hooks/UsseEffectHook";
+import Hooks from "./forms and hooks/Hooks";
+import NewsApp from "./forms and hooks/NewsApp";
 
 function App() {
   const [countInParent, setCountInParent] = useState(0);
@@ -31,7 +34,12 @@ function App() {
       
     {/*  */}
 
-    <UserForm/>
+    {/* <UserForm/> */}
+    {/* <UsseEffectHook/> */}
+
+    {/* <Hooks/> */}
+
+    <NewsApp/>
 
     </div>
   );
