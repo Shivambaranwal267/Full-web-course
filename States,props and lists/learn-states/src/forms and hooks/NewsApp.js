@@ -27,7 +27,7 @@ function NewsApp() {
   return (
     <div style={{display:'grid', gridTemplateColumns: 'repeat(3, 30%)', alignItems:'space-between', rowGap:'20px' }}>
       {newsList.map((news) => {
-        return <News news={news}/>;
+        return <News news={news} />;
       })}
 
       {/* <select name="" id="">
