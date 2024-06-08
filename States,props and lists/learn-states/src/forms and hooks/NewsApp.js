@@ -25,7 +25,7 @@ function NewsApp() {
   // const arr = [1, 2, 3, 7, 12, 34];
 
   return (
-    <div style={{display:'grid', gridTemplateColumns: 'repeat(3, 30%)'}}>
+    <div style={{display:'grid', gridTemplateColumns: 'repeat(3, 30%)', alignItems:'space-between', rowGap:'20px' }}>
       {newsList.map((news) => {
         return <News news={news}/>;
       })}
