@@ -3,7 +3,7 @@ import News from "./News";
 
 function NewsApp() {
   const apiKey = "2efa214a61e248e6a37e0352c7b59da0";
-  const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-05-07&sortBy=publishedAt&apiKey=${apiKey}`;
+  const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-05-08&sortBy=publishedAt&apiKey=${apiKey}`;
 
   const [newsList, setNewsList] = useState([]);
 
@@ -25,7 +25,15 @@ function NewsApp() {
   // const arr = [1, 2, 3, 7, 12, 34];
 
   return (
-    <div style={{display:'grid', gridTemplateColumns: 'repeat(3, 30%)', alignItems:'space-between', rowGap:'20px' }}>
+    <div>
+      <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 30%)",
+        alignItems: "space-between",
+        rowGap: "20px",
+      }}
+    >
       {newsList.map((news) => {
         return <News news={news} />;
       })}
@@ -36,6 +44,8 @@ function NewsApp() {
          })}
       </select> */}
     </div>
+    </div>
+    
   );
 }
 
