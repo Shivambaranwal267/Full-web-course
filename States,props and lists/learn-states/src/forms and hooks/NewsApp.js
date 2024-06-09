@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import News from "./News";
+import './NewsApp.css'
 
 function NewsApp() {
   const apiKey = "2efa214a61e248e6a37e0352c7b59da0";
-  const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-05-08&sortBy=publishedAt&apiKey=${apiKey}`;
-
+  
   const [newsList, setNewsList] = useState([]);
   const [query, setQuery] = useState("tesla");
+  
+  const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-05-08&sortBy=publishedAt&apiKey=${apiKey}`;
 
   const queryInputRef = useRef(null);
+
   useEffect(() => {
     fetchData();
   }, [query]);
@@ -26,21 +29,23 @@ function NewsApp() {
 
   // const arr = [1, 2, 3, 7, 12, 34];
 
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault()
     const queryValue = queryInputRef.current.value;
     setQuery(queryValue);
   }
 
   return (
-    <div>
+    <div className="news-app">
+      <h1>News Daily</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" ref={queryInputRef} />
-        <input onClick={handleSubmit} type="submit" value="Submit" />
+        <input className="query-input" type="text" ref={queryInputRef} />
+        <input className="btn-submit" onClick={handleSubmit} type="submit" value="Submit" />
       </form>
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 30%)",
+          gridTemplateColumns: "repeat(2, 50%)",
           alignItems: "space-between",
           rowGap: "20px",
         }}

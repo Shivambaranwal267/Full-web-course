@@ -1,6 +1,6 @@
-.news-card{
-    border: 20px;
-    border: 2px solid #666;
+.news-card {
+  border: 20px;
+  border: 2px solid #666;
 }
 
 img {
@@ -14,4 +14,13 @@ h2 {
 
 p {
   color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-read-more {
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 20px;
+  color: white;
+  background-color: black;
 }
